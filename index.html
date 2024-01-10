@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fjalla+One&family=Great+Vibes&family=Lobster+Two&family=Mooli&family=Poppins:wght@300&family=Rajdhani:wght@600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- rimix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- swiper slider jQuery css link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="other source/jQuery/swiper-slider/src/style.css">
+
+    <!--external css link -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>New Portfolio</title>
+</head>
+
+<body id="get_to_top">
+
+    <main>
+
+        <!-- page load animation -->
+
+        <div class="page_container" id="page_load">
+            <div class="page_load_wrapper">
+                <div class="load_box"></div>
+                <div class="load_box"></div>
+                <div class="load_box"></div>
+                <div class="load_box"></div>
+            </div>
+        </div>
+
+        <!-- get to top btn -->
+
+        <a href="#get_to_top" id="get_to_top_btn">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!-- header section start -->
+        <header onscroll="header_shadow()" id="header">
+
+            <div class="menu_bars" id="menu_icon">
+                <span id="menu"></span>
+            </div>
+
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav_pointer">Home</a></li>
+                    <li><a href="#service_sec">Services</a></li>
+                    <li><a href="#project_sec">Projects</a></li>
+                    <li><a href="#team_sec">Team</a></li>
+                    <li><a href="#blog_sec">News</a></li>
+                    <li><a href="#contact_sec">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="social_media">
+                <i class="ri-share-line" id="header_share_icon" onclick="pop_social_icons()"></i>
+                <ul class="header_social" id="show_social_box">
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/i/flow/login">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-435253782%3A1702636792583404&theme=glif">
+                            <i class="ri-google-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/accounts/login/">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- responsive slide menus -->
+
+            <div class="slide_menu" id="menu_slider">
+                <div class="res_social_app">
+                    <a href="https://www.facebook.com/">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a
+                        href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-435253782%3A1702636792583404&theme=glif">
+                        <i class="ri-google-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </div>
+                <div class="res_nav">
+                    <ul>
+                        <li><a href="index.html" class="res_nav_pointer">Home</a></li>
+                        <li><a href="#service_sec">Services</a></li>
+                        <li><a href="#project_sec">Projects</a></li>
+                        <li><a href="#team_sec">Team</a></li>
+                        <li><a href="#blog_sec">News</a></li>
+                        <li><a href="#contact_sec">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Swiper slider section start-->
+        <section class="swiper_slider_section">
+            <div class="swiper-slider-container" id="swiper_con">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/assets/images/slider-1.jpg" alt="">
+                        <h1>Mobile App Development</h1>
+                        <p>Since our establishment, we have been delivering high-quality and sustainable <br> software
+                            solutions for corporate purposes of worldwide businesses.</p>
+                        <div class="btn1"><span></span><button>GET IN TOUCH</button></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/images/slider-2.jpg" alt="">
+                        <h1>Experienced Team</h1>
+                        <p>We are a team of qualified software developers, aimed at creating unique and <br> powerful
+                            tools
+                            for your business & everyday life.</p>
+                        <div class="btn1"><span></span><button>GET IN TOUCH</button></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/images/slider-3.jpg" alt="">
+                        <h1>Award-Winning-Software</h1>
+                        <p>The software solutions developed by our company have been numerously awarded <br> for
+                            usability
+                            and innovative features.</p>
+                        <div class="btn1"><span></span><button>GET IN TOUCH</button></div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- services section -->
+        <section class="service_section" id="service_sec">
+            <div class="service_img">
+                <img src="assets/images/index-1.png" alt="">
+            </div>
+            <div class="services_container">
+                <div class="service_box">
+                    <h4 class="service_box_heading">What We Offer</h4>
+                    <div class="btn1"><span></span><button>VIEW ALL SERVICES</button></div>
+                </div>
+                <div class="service_box">
+                    <div class="services_box_icon">
+                        <i class="ri-triangle-fill triangle"></i>
+                        <i class="ri-phone-line service_icon"></i>
+                    </div>
+                    <h4 class="service_box_heading">CORPORATE <br> SOLUTIONS</h4>
+                    <p>Need specific software for your company? We are ready to develop it!</p>
+                </div>
+                <div class="service_box">
+                    <div class="services_box_icon">
+                        <i class="ri-triangle-fill triangle"></i>
+                        <i class="ri-customer-service-line service_icon"></i>
+                    </div>
+                    <h4 class="service_box_heading">CALL CENTER <br> SOLUTIONS</h4>
+                    <p>Our experts provide custom products of any complexity for call centers.</p>
+                </div>
+                <div class="service_box">
+                    <div class="services_box_icon">
+                        <i class="ri-triangle-fill triangle"></i>
+                        <i class="ri-cloudy-line service_icon"></i>
+                    </div>
+                    <h4 class="service_box_heading">CLOUD <br> DEVELOPMENT</h4>
+                    <p>We can also offer you reliable cloud development solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- develop website section -->
+        <section class="develop_section">
+            <h2>Let's Develop Your Next Great Website!</h2>
+            <p>Do you need a unique software solution for your company? We know how to help you!</p>
+            <div class="btn_container">
+                <div class="btn1"><span></span><button>GET IN TOUCH</button></div>
+                <div class="btn1"><span></span><button>LEARN MORE</button></div>
+            </div>
+        </section>
+
+        <!-- latest projects -->
+        <section class="project_section" id="project_sec">
+            <div class="project_sub_container">
+                <h2 class="headings">Latest Projects</h2>
+                <p>In our portfolio, you can browse the latest products developed for our clients for different
+                    corporate purposes. Our qualified team of interface designers and software developers is always
+                    ready to create something unique for you.</p>
+                <div class="project_nav">
+                    <ul>
+                        <li class="project_btn" onclick="all_pro_show()">ALL</li>
+                        <li class="project_btn" onclick="all_mobile_pro_show()">MOBILE APPS</li>
+                        <li class="project_btn" onclick="all_cus_pro_show()">CUSTOM SOFTWARE</li>
+                        <li class="project_btn" onclick="all_test_pro_show()">QA & TESTING</li>
+                        <li class="project_btn" onclick="all_ui_pro_show()">UX AND UI DESIGN</li>
+                    </ul>
+                </div>
+                <div class="res_project_nav_container">
+                    <div class="btn3" id="project_nav_btn"><span></span><button>FILTER<i class="ri-arrow-down-s-fill"
+                                id="pro_filter_arrow"></i></button></div>
+                    <ul id="res_project_nav">
+                        <li class="project_btn current_pro" onclick="all_pro_show()">ALL</li>
+                        <li class="project_btn" onclick="all_mobile_pro_show()">MOBILE APPS</li>
+                        <li class="project_btn" onclick="all_cus_pro_show()">CUSTOM SOFTWARE</li>
+                        <li class="project_btn" onclick="all_test_pro_show()">QA & TESTING</li>
+                        <li class="project_btn" onclick="all_ui_pro_show()">UX AND UI DESIGN</li>
+                    </ul>
+                </div>
+                <div class="project_box_container">
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-1.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>FinStep</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-2.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>Mobile Finance</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-3.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>Q-Manage</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-4.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>WeatherCast</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-5.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>Home Calendar</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-6.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>MPlanner</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-7.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>Alice Messenger</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project show_all_pro">
+                        <figure>
+                            <img src="assets/images/fullwidth-gallery-8.jpg" alt="">
+                            <figcaption>
+                                <span>
+                                    <i class="ri-zoom-in-line"></i>
+                                    <h4>WiseMoney</h4>
+                                </span>
+                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t
+                                    find anywhere else.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- year of experience section -->
+        <section class="experience_section">
+            <div class="exp_sub_container">
+                <div class="year_of_exp_container">
+                    <h1 id="year_of_exp"></h1>
+                    <div class="about_year_of_exp">
+                        <h3>Years Of <br> Experience</h3>
+                        <p>RatherApp is a team of highly <br> experienced app designers and developers creating unique
+                            software
+                            for you.</p>
+                        <div class="btn2"><span></span><button>GET IN TOUCH</button></div>
+                    </div>
+                </div>
+                <div class="exp_awards_boxes_container">
+                    <div class="exp_awards_box">
+                        <span>
+                            <h2 class="exp_num">2</h2>
+                            <h4>K</h4>
+                        </span>
+                        <p>WEBSITE DEVELOPMENT</p>
+                    </div>
+                    <div class="exp_awards_box">
+                        <h2 class="exp_num"></h2>
+                        <p>CONSULTANTS</p>
+                    </div>
+                    <div class="exp_awards_box">
+                        <h2 class="exp_num"></h2>
+                        <p>AWARDS WON</p>
+                    </div>
+                    <div class="exp_awards_box">
+                        <h2 class="exp_num"></h2>
+                        <p>EMPLOYEES</p>
+                    </div>
+                </div>
+            </div>
+            <!-- client section -->
+            <div class="clients_section">
+                <div class="clients">
+                    <img src="assets/images/clients-9.png" alt="">
+                </div>
+                <div class="clients">
+                    <img src="assets/images/clients-10.png" alt="">
+                </div>
+                <div class="clients">
+                    <img src="assets/images/clients-3.png" alt="">
+                </div>
+                <div class="clients">
+                    <img src="assets/images/clients-11.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- team section -->
+        <section class="team_section" id="team_sec">
+            <h2 class="headings">Meet The Team</h2>
+            <div class="team_sub_container">
+                <div class="team">
+                    <figure>
+                        <img src="assets/images/team-11.jpg" alt="">
+                        <figcaption>
+                            <h4>Ryan Wilson</h4>
+                            <p>Director of Production</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="team">
+                    <figure>
+                        <img src="assets/images/team-12.jpg" alt="">
+                        <figcaption>
+                            <h4>Jill Peterson</h4>
+                            <p>UI Designer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="team">
+                    <figure>
+                        <img src="assets/images/team-13.jpg" alt="">
+                        <figcaption>
+                            <h4>Sam Robinson</h4>
+                            <p>Senior Developer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="team">
+                    <figure>
+                        <img src="assets/images/team-14.jpg" alt="">
+                        <figcaption>
+                            <h4>Mary Lee</h4>
+                            <p>Software Developer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- get more section -->
+
+        <div class="get_more_section">
+            <div class="get_more_text">
+                <h2 class="headings">Get More With Us</h2>
+                <div class="get_more_num_container">
+                    <span>
+                        <h3 class="get_more_num get_more_num_slider">01</h3>
+                    </span>
+                    <span>
+                        <h3 class="get_more_num">02</h3>
+                    </span>
+                    <span>
+                        <h3 class="get_more_num">03</h3>
+                    </span>
+                    <span>
+                        <h3 class="get_more_num">04</h3>
+                    </span>
+                </div>
+                <div class="get_more_detail_container">
+                    <div class="get_more_detail get_more_detail_show">
+                        <h5>FREE APPS</h5>
+                        <p>
+                            We regularly upload new free apps to our website, which is fully accessible to our clients
+                            and
+                            subscribers. You can also find out about free apps in our blog.
+                        </p>
+                        <div class="get_more_btn">
+                            <div class="btn2"><span></span><button>GET IN TOUCH</button></div>
+                            <div class="btn3"><span></span><button>LEARN MORE</button></div>
+                        </div>
+                    </div>
+                    <div class="get_more_detail">
+                        <h5>GET SOCIAL</h5>
+                        <p>
+                            Every app we develop has built-in social support that allows you to stay connected to your
+                            accounts on Facebook, Instagram, Twitter and other networks.
+                        </p>
+                        <div class="get_more_btn">
+                            <div class="btn2"><span></span><button>GET IN TOUCH</button></div>
+                            <div class="btn3"><span></span><button>LEARN MORE</button></div>
+                        </div>
+                    </div>
+                    <div class="get_more_detail">
+                        <h5>CUSTOMER SERVICE</h5>
+                        <p>
+                            Every customer of RatherApp can get access to our friendly and qualified 24/7 support via
+                            chat or phone. Fell free to ask us any question!
+                        </p>
+                        <div class="get_more_btn">
+                            <div class="btn2"><span></span><button>GET IN TOUCH</button></div>
+                            <div class="btn3"><span></span><button>LEARN MORE</button></div>
+                        </div>
+                    </div>
+                    <div class="get_more_detail">
+                        <h5>GREAT USABILITY</h5>
+                        <p>
+                            All our apps are designed to have great usability in order to easily operate our
+                            applications. That is why our software has high ratings and lots of awards.
+                        </p>
+                        <div class="get_more_btn">
+                            <div class="btn2"><span></span><button>GET IN TOUCH</button></div>
+                            <div class="btn3"><span></span><button>LEARN MORE</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="get_more_carousel">
+                <!-- <div class="get_more_swiper_container" id="swiper_con">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index-5.png" alt="">
+                        </div>
+                    </div>
+                </div> -->
+                <div class="get_more_slider">
+                    <img src="assets/images/index-4.png" alt="">
+                </div>
+                <div class="get_more_slider">
+                    <img src="assets/images/index-5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- testimonal section -->
+
+        <div class="testimonal_section">
+            <div class="testimonal_container">
+                <h2 class="headings">What People Say</h2>
+                <div class="testimonal_sub_container">
+                    <div class="testimonal">
+                        <div class="about_user_container">
+                            <div class="about_user">
+                                <img src="/assets/images/user-11.jpg" alt="">
+                                <span>
+                                    <h5>Catherine Williams</h5>
+                                    <h6>Regular client</h6>
+                                </span>
+                            </div>
+                            <p>RatherApp offers a high caliber of resources skilled in Microsoft Azure .NET, mobile
+                                and
+                                Quality Assurance. They became our true business partners over the past three years.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonal">
+                        <div class="about_user_container">
+                            <div class="about_user">
+                                <img src="/assets/images/user-12.jpg" alt="">
+                                <span>
+                                    <h5>Rupert Wood</h5>
+                                    <h6>Regular client</h6>
+                                </span>
+                            </div>
+                            <p>RatherApp powered us with a competent team to develop products for banking services.
+                                The
+                                team has been delivering results within budget and time, which is amazing.</p>
+                        </div>
+                    </div>
+                    <div class="testimonal">
+                        <div class="about_user_container">
+                            <div class="about_user">
+                                <img src="/assets/images/user-20.jpg" alt="">
+                                <span>
+                                    <h5>Samantha Brown</h5>
+                                    <h6>Regular client</h6>
+                                </span>
+                            </div>
+                            <p>RatherApp is a highly skilled and uniquely capable firm with multitudes of talent
+                                on-board. We have collaborated on a number of diverse projects that have been a
+                                great
+                                success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pricing section -->
+        <div class="pricing_section">
+            <h2 class="headings">Pricing</h2>
+            <div class="pricing_container">
+                <div class="pricing_box_sub_container">
+                    <div class="pricing_box">
+                        <h4>BASIC</h4>
+                        <h3>$500.00</h3>
+                        <h5>STARTING AT</h5>
+                        <h1>BASIC</h1>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Concept development</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>UI design</p>
+                        </span>
+                        <span>
+                            <i class="ri-check-fill"></i>
+                            <p>Configuration management</p>
+                        </span>
+                        <span>
+                            <i class="ri-check-fill"></i>
+                            <p>Software quality assurance</p>
+                        </span>
+                        <span>
+                            <i class="ri-check-fill"></i>
+                            <p>App integration</p>
+                        </span>
+                    </div>
+                    <button>GET STARTED</button>
+                </div>
+                <div class="pricing_box_sub_container">
+                    <div class="pricing_box">
+                        <div class="popular_pricing">
+                            POPULAR
+                        </div>
+                        <h4>OPTIMAL</h4>
+                        <h3>$800.00</h3>
+                        <h5>STARTING AT</h5>
+                        <h1>OPTIMAL</h1>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Concept development</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>UI design</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Configuration management</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Software quality assurance</p>
+                        </span>
+                        <span>
+                            <i class="ri-check-fill"></i>
+                            <p>App integration</p>
+                        </span>
+                    </div>
+                    <button>GET STARTED</button>
+                </div>
+                <div class="pricing_box_sub_container">
+                    <div class="pricing_box">
+                        <h4>ULTIMATE</h4>
+                        <h3>$1200.00</h3>
+                        <h5>STARTING AT</h5>
+                        <h1>ULTIMATE</h1>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Concept development</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>UI design</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Configuration management</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>Software quality assurance</p>
+                        </span>
+                        <span class="ser_active">
+                            <i class="ri-check-fill"></i>
+                            <p>App integration</p>
+                        </span>
+                    </div>
+                    <button>GET STARTED</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- blog section -->
+        <div class="blog_section" id="blog_sec">
+            <h2 class="headings">Latest Blog Posts</h2>
+            <div class="blog_container">
+                <div class="blog_box">
+                    <figure>
+                        <img src="assets/images/post-10.jpg" alt="">
+                        <figcaption>
+                            <h3>07</h3><span>/</span>
+                            <h4>04</h4>
+                        </figcaption>
+                    </figure>
+                    <h5>Benefits Of Async/Await</h5>
+                    <p>Asynchronous functions are a good and bad thing in JavaScript. The good side is that
+                        asynchronous
+                        functions are non-blocking and...</p>
+                </div>
+                <div class="blog_box">
+                    <figure>
+                        <img src="assets/images/post-11.jpg" alt="">
+                        <figcaption>
+                            <h3>07</h3><span>/</span>
+                            <h4>17</h4>
+                        </figcaption>
+                    </figure>
+                    <h5>Key Considerations Of IPaaS</h5>
+                    <p>Digital transformation requires cloud appropriate adoption, legacy IT systems modernization,
+                        and
+                        Agile-based methodologies for faster...</p>
+                </div>
+                <div class="blog_box">
+                    <figure>
+                        <img src="assets/images/post-12.jpg" alt="">
+                        <figcaption>
+                            <h3>07</h3><span>/</span>
+                            <h4>22</h4>
+                        </figcaption>
+                    </figure>
+                    <h5>Never Stop Optimizing Your Code</h5>
+                    <p>In this tutorial, we will discuss the Hibernate Query Language. HQL is an object-oriented
+                        query
+                        language. Hibernate Query....</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact info section -->
+
+        <div class="conatct_info_section" id="contact_sec">
+            <div class="conatct_info_container">
+                <div class="contact_box">
+                    <i class="ri-smartphone-line"></i>
+                    <span></span>
+                    <h4>+1 323-913-4688</h4>
+                    <h4>+1 323-888-4554</h4>
+                </div>
+                <div class="contact_box">
+                    <i class="ri-home-2-line"></i>
+                    <span></span>
+                    <h4>4730 Crystal Springs Dr, <br> Los Angeles, CA 90027</h4>
+                </div>
+                <div class="contact_box">
+                    <i class="ri-wechat-line"></i>
+                    <span></span>
+                    <h4>mail@demolink.org</h4>
+                    <h4>info@demolink.org</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact form section -->
+        <div class="contact_form_section">
+            <div class="get_in_touch_container">
+                <h3>Get In Touch</h3>
+                <h4>If you have any questions, just fill in the contact form, and we will answer you shortly.</h4>
+            </div>
+            <div class="contact_form_container">
+                <form action="" onsubmit="return validateForm()">
+                    <div class="input_box">
+                        <label for="input_name">Your Name</label>
+                        <input type="text" id="input_name" class="input_text">
+                        <p></p>
+                    </div>
+                    <div class="input_box">
+                        <label for="input_email">E-mail</label>
+                        <input type="text" id="input_email" class="input_text">
+                        <p></p>
+                    </div>
+                    <div class="input_box">
+                        <label for="input_phone">Phone</label>
+                        <input type="text" id="input_phone" class="input_text">
+                        <p></p>
+                    </div>
+                    <div class="input_box massege_box">
+                        <label for="input_massege">Massege</label>
+                        <textarea name="massege" id="input_massege" class="input_text massege_input"></textarea>
+                        <p></p>
+                    </div>
+                    <div class="btn2">
+                        <span></span>
+                        <input type="submit" class="btn2 contact_form_submit" id="form_submit" value="Send Massege">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- more templet section -->
+
+        <div class="more_templet_section">
+            <a href="#">
+                <img src="assets/images/banner-fg-01.png" alt="">
+            </a>
+        </div>
+
+
+        <!-- google map section -->
+
+        <div class="google_map_section">
+            <iframe class="google_map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57582.547887309796!2d83.52999548330938!3d25.57468605573787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991ff78350bdfbf%3A0xc4a72451c0503586!2sGhazipur%2C%20Uttar%20Pradesh%20233001!5e0!3m2!1sen!2sin!4v1702281444364!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <!-- footer section -->
+
+        <footer>
+            <div class="footer_container">
+                <div class="footer_imp_links_container">
+                    <ul class="footer_imp_links">
+                        <li><a href="#">UI DESIGN</a></li>
+                        <li><a href="#">WINDOWS/MAC OS APPS</a></li>
+                        <li><a href="#">ANDROID/IOS APPS</a></li>
+                        <li><a href="#">CLOUD SOLUTIONS</a></li>
+                        <li><a href="#">CUSTOMER SUPPORT</a></li>
+                    </ul>
+                </div>
+                <div class="sub_footer">
+                    <p>© 2023 ArkCoder</p>
+                    <ul class="footer_social">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/i/flow/login">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-435253782%3A1702636792583404&theme=glif">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/accounts/login/">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3>All rights reserved. Design by TemplateMonster</h3>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- jQuery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- swiper slider jQuery script link -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="other source/jQuery/swiper-slider/src/script.js"></script>
+
+
+    <!-- external script link -->
+    <script src="assets/scripts/script.js"></script>
+
+</body>
+
+</html>
